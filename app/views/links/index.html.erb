@@ -1,0 +1,30 @@
+<h1 style="margin-bottom: 1em;">Links</h1>
+
+<!-- <table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Url</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody> -->
+    <% @links.each do |link| %>
+      <div class="row link-div">
+        <a href="<%= link.url %>" class="btn btn-info"><%= link.title %></a>
+        <span><%= link.url %></span>
+        <br>
+        <!-- <td><%= link_to 'Show', link %></td> -->
+        <span><%= link_to 'Edit', edit_link_path(link) %></span>
+        <a><%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+      </div>
+    <% end %>
+ <!--  </tbody>
+</table> -->
+
+<br>
+
+<%= link_to 'New Link', new_link_path %>

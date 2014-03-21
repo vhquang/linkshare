@@ -11,3 +11,9 @@
  *= require_self
  *= require_tree .
  */
+.link-div {
+    border: solid thin;
+    border-color: rgb(197, 197, 197);
+    margin: 1em;
+    padding: 1em;
+}
